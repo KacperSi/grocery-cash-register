@@ -6,7 +6,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-#[[add_executable(grocery main.cpp)]]
 
 file(GLOB SOURCES
    database.h
@@ -14,20 +13,14 @@ file(GLOB SOURCES
    main.cpp
    product.cpp
    database.cpp
-
+   productbyweight.h
+   productbyweight.cpp
+   orderedproduct.h
+   orderedproduct.cpp
+   cashregister.cpp
+   cashregister.h
+   order.h
+   order.cpp
 )
 
 add_executable(grocery ${SOURCES})
-
-#SET(TARGET_H
-#    allHeaders.h
-#    database.h
-#    product.h
-#   )
-
-## Local source files here
-#SET(TARGET_SRC
-#    main.cpp
-#    database.cpp
-#    product.cpp
-#    )

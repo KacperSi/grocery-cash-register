@@ -5,10 +5,11 @@
 
 class product
 {
-    std::string barCode;
-    bool byWeight;
-    float price;
-    std::string name;
+    std::string barCode="000000";
+    bool byWeight=0;
+    float price=0;
+    std::string name="no-named";
+
 public:
     product(){};
     product(std::string& _barCode,bool _byWeight,float& _price,std::string& _name):barCode(_barCode),byWeight(_byWeight),price(_price),name(_name){};
@@ -19,18 +20,10 @@ public:
     float getPrice(){return this->price;}
     std::string getName(){return this->name;}
 
+
 //pobierz wagę całkowicie wirtualna
 };
 
-class productByWeight:public product
-{
-public:
-    //metoda wirtualna do wagi
-};
-class productByItem:public product
-{
-public:
-    //pobierz wagę
-};
+
 
 #endif // PRODUCT_H
