@@ -7,7 +7,7 @@ class productByWeight : public orderedProduct
 {
 public:
     productByWeight(){};
-    productByWeight(std::string& _barCode,bool _byWeight,float& _price,std::string& _name):orderedProduct(_barCode,_byWeight,_price,_name){};
+    productByWeight(orderedProduct old):orderedProduct(old){};
     virtual void setAmount() override;
 };
 

@@ -4,3 +4,8 @@ cashRegister::cashRegister()
 {
 
 }
+
+//void cashRegister::callDataBaseDownload()
+//{
+//    this->productsBase.dataBaseDownload();
+//}

@@ -5,11 +5,18 @@
 
 class orderedProduct : public product
 {
-    int amount=0;
+protected:
+    float amount=0;
+    float tPrice=0;// total price of single product(price*amount)
 public:
     orderedProduct();
-    orderedProduct(std::string& _barCode,bool _byWeight,float& _price,std::string& _name):product(_barCode,_byWeight,_price,_name){};// do poprawy
+    orderedProduct(product old):product(old){};
+
     virtual void setAmount();
+
+    void setTPrice();
+    float getTPrice(){return tPrice;}
+    float getAmount(){return amount;}
 };
 
 #endif // ORDEREDPRODUCT_H

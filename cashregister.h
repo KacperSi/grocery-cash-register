@@ -4,11 +4,12 @@
 #include"database.h"
 
 
-class cashRegister
+class cashRegister:dataBase
 {
-    dataBase productsBase;
+    //dataBase productsBase;
 public:
     cashRegister();
+    //void callDataBaseDownload();
 
 };
 

@@ -11,10 +11,9 @@ class dataBase
 {
         std::vector<product> baseOfProducts;
 public:
-        void dataBaseDownload();
+        bool dataBaseDownload();
         void returnProduct(std::string searched, product& returned);
-        void dataBaseSourcing(std::stringstream& str);//może do innej klasy?
-        void printDataBase();//shouldn't be here so delete before final version!!!!!!!!!!!
+        void dataBaseSourcing(std::stringstream& str);
 };
 
 #endif // DATABASE_H

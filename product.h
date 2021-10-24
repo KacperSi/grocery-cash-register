@@ -5,6 +5,7 @@
 
 class product
 {
+protected:
     std::string barCode="000000";
     bool byWeight=0;
     float price=0;
@@ -19,9 +20,6 @@ public:
     bool getByWeight(){return this->byWeight;}
     float getPrice(){return this->price;}
     std::string getName(){return this->name;}
-
-
-//pobierz wagę całkowicie wirtualna
 };
 
 
