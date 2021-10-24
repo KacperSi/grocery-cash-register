@@ -17,8 +17,6 @@ file(GLOB SOURCES
    productbyweight.cpp
    orderedproduct.h
    orderedproduct.cpp
-   cashregister.cpp
-   cashregister.h
    order.h
    order.cpp
 )
